@@ -15,13 +15,11 @@ function clickBox() {
 
     box.style.backgroundColor = ``
     score = 0
-  }
-  else {
+  } else {
     if (box.style.backgroundColor == `blue`) {
       score = score + 1
       messageParagraph.innerHTML = `Score: ${score}`
-    }
-    else {
+    } else {
       messageParagraph.innerHTML = `You misclicked. Your score is ${score}.`
       clearInterval(intervalId)
       gameStarted = false
@@ -34,11 +32,9 @@ function changeColor() {
 
   if (randomNumber == 0) {
     box.style.backgroundColor = `red`
-  }
-  else if (randomNumber == 1) {
+  } else if (randomNumber == 1) {
     box.style.backgroundColor = `green`
-  }
-  else if (randomNumber == 2) {
+  } else if (randomNumber == 2) {
     box.style.backgroundColor = `blue`
   }
 }
